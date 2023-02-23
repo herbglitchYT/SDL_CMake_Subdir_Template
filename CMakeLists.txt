@@ -17,7 +17,7 @@ target_link_directories(${PROJECT_NAME}
 )
 
 if(WIN32 AND NOT MSVC)
-    target_link_libraries(${PROJECT_NAME} mingw32 SDL2main)
+    target_link_libraries(${PROJECT_NAME} mingw32 SDL2main SDL2)
 else()
     target_link_libraries(${PROJECT_NAME} SDL2main SDL2)
 endif()
